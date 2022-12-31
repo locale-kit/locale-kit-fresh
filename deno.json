@@ -1,0 +1,30 @@
+{
+  "importMap": "./import_map.json",
+  "fmt": {
+    "files": {
+      "include": [],
+      "exclude": [
+        "README.md"
+      ]
+    },
+    "options": {}
+  },
+  "lint": {
+    "files": {
+      "include": [],
+      "exclude": []
+    },
+    "rules": {
+      "tags": [],
+      "include": [],
+      "exclude": []
+    }
+  },
+  "test": {
+    "files": {
+      "include": [],
+      "exclude": []
+    }
+  },
+  "compilerOptions": {}
+}

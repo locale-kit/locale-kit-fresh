@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "$fresh/": "https://deno.land/x/fresh@1.1.2/",
+    "preact": "https://esm.sh/preact@10.11.0",
+    "locale-kit": "https://deno.land/x/localekit@0.4.1/mod.ts"
+  }
+}
