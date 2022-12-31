@@ -229,7 +229,7 @@ locale_kit.t('my.translation.key', {
     my: 'object',
     containing: {
         relevant: 'information',
-        for_data: 'substitution
+        for_data: 'substitution'
     }
 ) // output: "Here's a translation with substitution"
 ```
