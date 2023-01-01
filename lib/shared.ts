@@ -1,6 +1,5 @@
-import { JSX, options as preactOptions, VNode } from "preact";
+import { options as preact_options,  type VNode, type JSX} from "preact";
 import { lang_svc } from "./translation.ts";
-
 /**
  * Options for the translation service.
  */
@@ -42,12 +41,12 @@ export function setup(options: Options, language?: string) {
   }
 
   // Backup the original vnode hook function
-  const originalHook = preactOptions.vnode;
+  const originalHook = preact_options.vnode;
 
   // Create a new hook function that will be called before every vnode is
   // rendered
   // deno-lint-ignore no-explicit-any
-  preactOptions.vnode = (vnode: VNode<JSX.DOMAttributes<any>>) => {
+  preact_options.vnode = (vnode: preact.VNode<preact.JSX.DOMAttributes<any>>) => {
     const { props } = vnode;
 
     // If the element has a translation key, replace its children with the translated text.

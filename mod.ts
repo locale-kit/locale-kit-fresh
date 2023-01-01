@@ -5,6 +5,7 @@ import { Options, setup } from "./lib/shared.ts";
 
 export type { Options };
 
+
 declare module "preact" {
   namespace JSX {
     interface DOMAttributes<Target extends EventTarget> {
