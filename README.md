@@ -115,7 +115,7 @@ The general formatting of a dynamic translation key follows the following:
     * invalid: test case
     * invalid: test(case)
     * invalid: test.case
-* key followed by colon, and value of test case is wrapped in backticks
+* key followed by colon, and value of test case is wrapped in backticks (or with ;: and :; at the start and end if you prefer your templates/dynamic structures to be able to span multiple lines without having to escape the backtics in javascript)
 * each parameter should be separated by a lone pipe character
 * optionally, a `default` case can be passed in at the end to handle edge cases
 * optionally, you can embed a value in a format case using double squigly lines; examples:
