@@ -1,18 +1,25 @@
 import { options as preact_options,  type VNode, type JSX} from "preact";
 import { lang_svc } from "./translation.ts";
+
+interface Language {
+  [key: string]: Record<string, string> | Language;
+}
+
 /**
  * Options for the translation service.
  */
 export interface Options {
   /** The import.meta.url of the module defining these options. */
   selfURL: string;
+  
   /**
    * Preallocated languages to use for translations. This is useful if you want
    * to preallocate languages on the server and then hydrate them on the client.
    * If this is not provided, the client will try to get the language from the
    * provided fetch_url.
    */
-  languages: Record<string, Record<string, string>>;
+  languages: Language;
+
   /**
    * Optional location to attempt fetching a translation from
    * @example https://example.com/translations/{{lang}}.json
