@@ -2,7 +2,7 @@ import { options as preact_options,  type VNode, type JSX} from "preact";
 import { lang_svc } from "./translation.ts";
 
 interface Language {
-  [key: string]: Record<string, string> | Language;
+  [key: string]: string | Language;
 }
 
 /**
